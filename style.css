@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+p {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+
+.top-books {
+
+}
+
+.top-books_container {
+    display: flex;
+}
+
+.top-books_category {
+
+}
+
+.top-books_list{
+    max-width: 200px;
+    margin-right: 24px;
+}
+
+.top-books_link{
+
+}
+
+.top-books_title{
+
+}
+
+.top-books_author{
+
+}
+
+.top-books_button{
+
+}

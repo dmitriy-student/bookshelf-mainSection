@@ -23,18 +23,18 @@ function createMarkup(arr) {
   return arr
     .map((obj, i) => {
       const booksMarkup = obj.books.map(
-        (obj) => `<li>
-    <a href="#">
+        (obj) => `<li class="top-books_list list">
+    <a href="#" class="top-books_link link">
         <img src="${obj.book_image}" alt="book_image"  width="180">
-        <h3>${obj.title}</h3>
-        <p>${obj.contributor}</p>
+        <h3 class="top-books_title">${obj.title}</h3>
+        <p class="top-books_author">${obj.contributor}</p>
     </a>
 </li>`
       );
-      return `<ul>
-      <p>${i + 1} - ${obj.list_name}</p>
-      ${booksMarkup}
-      <a href="#">see more</a>
+      return `<ul class="top-books">
+      <p class="top-books_category">${obj.list_name}</p>
+      <div class="top-books_container">${booksMarkup}</div>
+      <a href="#" class="top-books_button link">see more</a>
       </ul>`;
     })
     .join("");
